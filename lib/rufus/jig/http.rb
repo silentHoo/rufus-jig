@@ -218,7 +218,7 @@ module Rufus::Jig
 
       @options = args.last.is_a?(Hash) ? args.pop.dup : {}
 
-      if args[1].is_a?(Fixnum) # host, port[, path]
+      if args[1].is_a?(Integer) # host, port[, path]
 
         @scheme = 'http'
         @host, @port, @_path = args
